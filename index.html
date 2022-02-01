@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -30,10 +30,10 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                </div>
+               <div class="col d-flex flex-row-reverse mt-4">
+                    <a class="btn btn-lg btn-info col-md-4 col-xl-2 p-2" role="button" data-toggle="modal" data-target="#reserveModal"> Reserve Campsite</a>
+                </div>
             </div>
-        </div>
-        <div class="col d-flex flex-row-reverse mt-4">
-            <a class="btn btn-lg btn-info col-md-4 col-xl-2 p-2" role="button" data-toggle="modal" data-target="#reserveModal"> Reserve Campsite</a>
         </div>
     </header>
 
@@ -46,13 +46,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form>
+                        
                             <form id="reserveForm">
                                 <div class="row form-group">
                                 
-                                    <label class="col-sm-6" for="Campers">Number of Campers</label>
+                                    <label class="col-sm-6 col-form-label" for="Campers">Number of Campers</label>
+                                    
                                     <div class="col-sm">
-                                        <select class="form-group form-control" name="numCampers" id="numCampers">
+                                        <select class="form-control" name="numCampers" id="numCampers">
+                                        
                                             <option value="select">Select</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -65,7 +67,8 @@
                                 </div>
                                 <div class="row form-group">
                                 
-                                    <label class="col-sm-6" for="Campers">Date</label>
+                                    <label class="col-form-label col-sm-6" for="Campers">Date</label>
+                                    
                                     <div class="col-sm">
                                         <input class="form-control" type="id" name="date" placeholder="mm/dd/yyyy">
                                     </div>
@@ -91,7 +94,8 @@
                                     </div>
                                 </div>
                             </form>
-                        </form>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -110,16 +114,7 @@
                     <li class="nav-item"><a class="nav-link" href="/aboutus.html"><i class="fa fa-info fa-lg"></i> About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact Us</a></li>
-                    <!--
-                      JOHN COMMENT:
-                      Add a empty space between the navigation link and link text in order to add a space between the font-icon and text i.e.
-
-                      Incorrect:
-                      <li class="nav-item active"><a class="nav-link" href='#'><i class="fa fa-home fa-lg"></i>Home</a></li>
-
-                      Correct:
-                      <li class="nav-item active"><a class="nav-link" href='#'><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    -->
+                    
                 </ul>
                 <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
@@ -293,17 +288,3 @@
 </body>
 
 </html>
-
-<!--
-  JOHN COMMENT:
-  Once again, AWESOME JOB Mohamed. Outside of some very small issues (see my comments above or in the attached file), your code is spot on, mirrors the mock, and functions exactly as expected.
-
-  Please make the necessary corrections per my comments.
-
-  In this Workshop Assignment you:
-  - Reinforced your understanding of the Bootstrap Grid
-  - Learned and implemented the Bootstrap Form Component
-  - Create a relationship between a button and element thus that when a user clicks on the button it takes the user to the element
-
-  Keep up the FANTASTIC WORK. And as always reach out if you have any questions.
--->
